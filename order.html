@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Оформление заказа — Мерч 1С</title>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom" aria-label="Главная навигация">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">1С Мерч</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Показать меню"><span class="navbar-toggler-icon" aria-hidden="true"></span><span class="ms-2">Меню</span></button>
+      <div class="collapse navbar-collapse" id="site-nav">
+        <ul class="navbar-nav ms-lg-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#reviews">Отзывы</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contacts">Контакты</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#popular">Популярные товары</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#advantages">Преимущества</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="container py-5">
+  <nav aria-label="Навигационная цепочка">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+      <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Оформление заказа</li>
+    </ol>
+  </nav>
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <h1 class="mb-2">Оформление заказа</h1>
+      <p class="text-secondary mb-4">Выберите товар и заполните контактные данные.</p>
+      <dialog class="form-dialog" open>
+        <form class="card p-4" method="dialog">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label" for="customerName">Имя</label>
+              <input class="form-control" id="customerName" name="customerName" type="text" autocomplete="name" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="email">Электронная почта</label>
+              <input class="form-control" id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="phone">Телефон</label>
+              <div class="input-group">
+                <span class="input-group-text" id="phone-prefix">+7</span>
+                <input class="form-control" id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" aria-describedby="phone-prefix" placeholder="999 123-45-67" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="product">Товар</label>
+              <select class="form-select" id="product" name="product" required>
+                <option value="" selected disabled>Выберите товар</option>
+                <option>Бирюзовая футболка 1С</option>
+                <option>Носки «Причиняем пользу»</option>
+                <option>Жёлтые сабо 1С</option>
+                <option>Футболка «Славянский интерфейс»</option>
+                <option>Футболка Balance</option>
+                <option>Шоппер «Потянем любую задачу»</option>
+                <option>Деловой рюкзак 1С</option>
+                <option>Металлический кардхолдер</option>
+                <option>Ремешок для телефона</option>
+                <option>Бамбуковая подставка для телефона</option>
+                <option>Жёлтый термостакан 1С</option>
+                <option>Термос с индикатором температуры</option>
+                <option>Кружка Grade Fade</option>
+                <option>Внешний аккумулятор 5000 мА·ч</option>
+                <option>Выдвижной кабель 3 в 1</option>
+                <option>Коврик с подсказками по 1С</option>
+                <option>Беспроводная зарядка-подставка 1С</option>
+                <option>Ручка с подставкой для телефона</option>
+                <option>Линейка-лупа с котом 1С</option>
+                <option>Ручка-мультитул 1С</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="comment">Комментарий</label>
+              <textarea class="form-control" id="comment" name="comment" rows="3" placeholder="Например, нужный размер или цвет"></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" id="consent" name="consent" type="checkbox" required>
+                <label class="form-check-label" for="consent">Я согласен с обработкой указанных данных</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-warning" type="submit">Отправить заявку</button>
+            </div>
+          </div>
+        </form>
+      </dialog>
+      <div class="form-success alert alert-success" role="status">Форма заполнена.</div>
+    </div>
+  </div>
+</main>
+<footer class="border-top py-4">
+  <div class="container small text-secondary">Мерч 1С · Одежда, аксессуары и полезные вещи.</div>
+</footer>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

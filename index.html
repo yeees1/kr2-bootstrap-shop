@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мерч 1С — главная</title>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom" aria-label="Главная навигация">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">1С Мерч</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Показать меню"><span class="navbar-toggler-icon" aria-hidden="true"></span><span class="ms-2">Меню</span></button>
+      <div class="collapse navbar-collapse" id="site-nav">
+        <ul class="navbar-nav ms-lg-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#reviews">Отзывы</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contacts">Контакты</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#popular">Популярные товары</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#advantages">Преимущества</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+<section class="container py-5">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+                <span class="badge text-bg-warning mb-3">1C SHOP</span>
+                <h1 class="display-4 fw-bold">Мерч 1С на каждый день</h1>
+                <p class="lead">
+                    Одежда, аксессуары и полезные вещи с символикой 1С.
+                    Выберите товар в каталоге и изучите его характеристики.
+                </p>
+                <a class="btn btn-warning btn-lg" href="catalog.html">Смотреть каталог</a>
+            </div>
+
+            <div class="col-lg-6">
+                <img class="img-fluid rounded-4 shadow-sm"
+                     src="images/tshirt-turquoise.jpg"
+                     alt="Бирюзовая футболка с символикой 1С">
+            </div>
+        </div>
+    </section>
+  <section class="container py-4" id="advantages">
+      <div class="col-md-8 col-lg-6">
+        <h2>Преимущества</h2>
+        <ul>
+          <li>Обширный каталог</li>
+          <li>Удобное оформление</li>
+          <li>Честные отзывы</li>
+        </ul>
+      </div>
+    
+  </section>
+<section class="section-soft py-5" id="popular">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+      <div><h2>Популярные товары</h2><p class="text-secondary mb-0">Несколько идей для знакомства с каталогом.</p></div>
+      <a class="btn btn-outline-dark" href="catalog.html">Все 20 товаров</a>
+    </div>
+    <div id="popularCarousel" class="carousel slide" role="region" aria-label="Популярные товары">
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="popular-card-1" role="group" aria-roledescription="слайд" aria-label="1 из 4">
+          <div class="row">
+            <div class="col-md-8 col-lg-6 mx-auto">
+              <article class="card product-card">
+                  <img src="images/tshirt-turquoise.jpg" class="card-img-top product-image" alt="Бирюзовая футболка 1С" loading="lazy">
+                  <div class="card-body d-flex flex-column">
+                    <span class="badge text-bg-warning align-self-start mb-2">Одежда</span>
+                    <h3 class="card-title h5">Бирюзовая футболка 1С</h3>
+                    <ul class="card-text text-secondary small ps-3"><li>Состав: 93% хлопок, 7% полиэстер</li><li>Размеры: S–3XL</li></ul>
+                    <p class="fw-bold fs-5 mt-auto mb-3">3 900 ₽</p>
+                    <a class="btn btn-outline-dark" href="product.html">Характеристики</a>
+                  </div>
+                </article>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" id="popular-card-2" role="group" aria-roledescription="слайд" aria-label="2 из 4">
+          <div class="row">
+            <div class="col-md-8 col-lg-6 mx-auto">
+              <article class="card product-card">
+                  <img src="images/socks-useful.jpg" class="card-img-top product-image" alt="Носки «Причиняем пользу»" loading="lazy">
+                  <div class="card-body d-flex flex-column">
+                    <span class="badge text-bg-warning align-self-start mb-2">Одежда</span>
+                    <h3 class="card-title h5">Носки «Причиняем пользу»</h3>
+                    <ul class="card-text text-secondary small ps-3"><li>Состав: 80% хлопок, 15% полиэстер, 5% эластан</li><li>Размеры: 36–40, 41–45</li></ul>
+                    <p class="fw-bold fs-5 mt-auto mb-3">560 ₽</p>
+                    <a class="btn btn-outline-dark" href="products/socks-useful.html">Характеристики</a>
+                  </div>
+                </article>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" id="popular-card-3" role="group" aria-roledescription="слайд" aria-label="3 из 4">
+          <div class="row">
+            <div class="col-md-8 col-lg-6 mx-auto">
+              <article class="card product-card">
+                  <img src="images/coffer-yellow.jpg" class="card-img-top product-image" alt="Жёлтый термостакан 1С" loading="lazy">
+                  <div class="card-body d-flex flex-column">
+                    <span class="badge text-bg-warning align-self-start mb-2">Для дома</span>
+                    <h3 class="card-title h5">Жёлтый термостакан 1С</h3>
+                    <ul class="card-text text-secondary small ps-3"><li>Объём: 350 мл</li><li>Материал: Нержавеющая сталь</li></ul>
+                    <p class="fw-bold fs-5 mt-auto mb-3">2 080 ₽</p>
+                    <a class="btn btn-outline-dark" href="products/coffer-yellow.html">Характеристики</a>
+                  </div>
+                </article>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" id="popular-card-4" role="group" aria-roledescription="слайд" aria-label="4 из 4">
+          <div class="row">
+            <div class="col-md-8 col-lg-6 mx-auto">
+              <article class="card product-card">
+                  <img src="images/shopper-task.jpg" class="card-img-top product-image" alt="Шоппер «Потянем любую задачу»" loading="lazy">
+                  <div class="card-body d-flex flex-column">
+                    <span class="badge text-bg-warning align-self-start mb-2">Аксессуары</span>
+                    <h3 class="card-title h5">Шоппер «Потянем любую задачу»</h3>
+                    <ul class="card-text text-secondary small ps-3"><li>Материал: Оксфорд 600D</li><li>Особенности: Подкладка и плечевые ручки</li></ul>
+                    <p class="fw-bold fs-5 mt-auto mb-3">970 ₽</p>
+                    <a class="btn btn-outline-dark" href="products/shopper-task.html">Характеристики</a>
+                  </div>
+                </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between col-md-8 col-lg-6 mx-auto mt-3" role="group" aria-label="Переключение популярных товаров">
+        <button class="btn btn-outline-dark" type="button" data-bs-target="#popularCarousel" data-bs-slide="prev">Назад</button>
+        <button class="btn btn-outline-dark" type="button" data-bs-target="#popularCarousel" data-bs-slide="next">Далее</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container py-5" id="reviews">
+  <h2>Отзывы</h2>
+  <p class="text-secondary">Отзывы о товарах магазина.</p>
+  <div class="row g-3 mb-4">
+    <div class="col-md-4"><article class="card h-100"><div class="card-body"><h3 class="h5">О футболке</h3><p class="mb-0">Понравились цвет и свободный крой. В карточке удобно указаны размеры.</p></div></article></div>
+    <div class="col-md-4"><article class="card h-100"><div class="card-body"><h3 class="h5">О термостакане</h3><p class="mb-0">Яркий цвет и компактный формат. Характеристики легко найти на странице товара.</p></div></article></div>
+    <div class="col-md-4"><article class="card h-100"><div class="card-body"><h3 class="h5">О рюкзаке</h3><p class="mb-0">Полезно, что в описании указан размер подходящего ноутбука.</p></div></article></div>
+  </div>
+  <dialog class="form-dialog" open>
+  <form class="card p-4" id="reviewForm" method="dialog">
+    <h3 class="h5">Оставить отзыв</h3>
+    <div class="mb-3">
+      <label class="form-label" for="reviewer">Ваше имя</label>
+      <input class="form-control" id="reviewer" name="reviewer" type="text" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="review">Текст отзыва</label>
+      <textarea class="form-control" id="review" name="review" rows="4" required></textarea>
+    </div>
+    <button class="btn btn-warning align-self-start" type="submit">Оставить отзыв</button>
+  </form>
+  </dialog>
+  <div class="form-success alert alert-success mt-3" role="status">Спасибо за ваш отзыв!</div>
+</section>
+<section class="section-soft py-5" id="contacts">
+  <div class="container">
+    <h2 class="mb-2">Контакты</h2>
+    <p class="text-secondary mb-4">Выберите удобный способ связи или посмотрите адрес на карте.</p>
+    <address class="row g-3 mb-4">
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body p-4">
+            <h3 class="h5">Адрес</h3>
+            <p class="mb-2">Московская область, Балашиха,<br>проспект Ленина, 32Г</p>
+            <a href="https://maps.app.goo.gl/sQXoKWK2xrWfcWcr6" target="_blank" rel="noopener noreferrer">Открыть на карте</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body p-4">
+            <h3 class="h5">Почта</h3>
+            <a class="text-break" href="mailto:1c-merch@m1c.1c">1c-merch@m1c.1c</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body p-4">
+            <h3 class="h5">Телефон</h3>
+            <a href="tel:+79679425267">+7 967 942 52 67</a>
+          </div>
+        </div>
+      </div>
+    </address>
+  </div>
+</section>
+</main>
+<footer class="border-top py-4">
+  <div class="container small text-secondary">Мерч 1С · Одежда, аксессуары и полезные вещи.</div>
+</footer>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
